@@ -41,3 +41,6 @@ In this section, I aim to document various techniques that were experimented wit
 - Training a 'simple' CNN for 170 epoch
 - Different loss functions
 - Optimal threshold selection
+
+## Potential Enhancements
+While the model achieved a suboptimal macro F1 score, there are various factors that could have contributed to this outcome. Subsequent to the deadline, I explored avenues for improvement by experimenting with smaller batch sizes, employing alternative model architectures, introducing additional image normalization techniques, and incorporating the average intensity in each layer for enhanced normalization of the input images.
