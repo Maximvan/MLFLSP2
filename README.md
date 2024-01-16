@@ -1,4 +1,5 @@
 # Machine Learning for Life Sciences Project 2 - Multi-Label Protein Organelle Localization Prediction
+This project aims to predict protein organelle localization in a dataset of confocal microscopy images, featuring 10 diverse labels across 10 different cell types, framing the challenge as a multi-label classification problem and employing mean F1-score as the evaluation metric in the context of the Machine Learning for Life Sciences course at Ghent University.
 
 ## Introduction
 The primary objective of this project is to predict the localization labels of protein organelles for each sample in a dataset containing images obtained through confocal microscopy. The dataset encompasses 10 distinct labels representing various protein organelle localizations. It is crucial to note that the dataset includes 10 different cell types, each exhibiting highly diverse morphologies, which directly influence the protein patterns of various organelles. Images within the dataset may have one or more labels associated with them.
