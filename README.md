@@ -44,3 +44,5 @@ In this section, I aim to document various techniques that were experimented wit
 
 ## Potential Enhancements
 While the model achieved a suboptimal macro F1 score, there are various factors that could have contributed to this outcome. Subsequent to the deadline, I explored avenues for improvement by experimenting with smaller batch sizes, employing alternative model architectures, introducing additional image normalization techniques, and incorporating the average intensity in each layer for enhanced normalization of the input images.
+
+Note: Zipped images were not uploaded due to large file size
