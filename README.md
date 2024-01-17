@@ -7,9 +7,7 @@ The primary objective of this project is to predict the localization labels of p
 The overarching goal of this project is to develop a model capable of predicting, for a given image the classes determining one or more proteins. This problem is framed as a multi-label classification challenge, and the mean F1-score is selected as the evaluation metric. The project is the second and final project as part of the course Machine Learning for Life Sciences at Ghent University.
 
 ## Data Exploration and Processing
-In this section of the report, I aim to delve into the features of the dataset. The dataset comprises images with a resolution of 128 x 128 pixels and is composed of three channels (RGB). All images are formatted in PNG.
-
-The training set encompasses 15,389 images, while the test set includes 3,847 images. To facilitate the analysis, the data is uploaded to the temporary file directory of the Google Colab notebook as a compressed zip file. Subsequently, it is extracted and organized into the appropriate directories for further processing.
+The dataset comprises images with a resolution of 128 x 128 pixels and is composed of three channels (RGB). All images are formatted in PNG. The training set encompasses 15,389 images, while the test set includes 3,847 images. To facilitate the analysis, the data is uploaded to the temporary file directory of the Google Colab notebook as a compressed zip file. Subsequently, it is extracted and organized into the appropriate directories for further processing.
 
 The class labels associated with the images are stored in a CSV file, featuring 'Image' and 'Label' columns. Each 'Image' corresponds to the image file name, with '.png' appended for ease of loading during model training and testing. Additionally, the categorical labels, ranging from 0 to 9, are separated into distinct columns within the DataFrame. This arrangement facilitates later retrieval and transformation into one-hot encoded labels.
 
@@ -35,7 +33,7 @@ Inception, known for its inception modules, excels in extracting features at var
 The incorporation of residual connections from the ResNet architecture enhances the model's ability to tackle the challenges of training deep networks. Residual connections facilitate the smooth flow of gradients during backpropagation, mitigating issues like vanishing gradients. This is particularly advantageous when dealing with deep architectures, ensuring effective learning and feature representation.
 
 ## Additional Reflections
-In this section, I aim to document various techniques that were experimented with but did not yield favorable results. These endeavors encompassed the exploration of different models, optimizers, loss functions, preprocessing techniques, and the generation of final test predictions. Although these methods were employed in diverse manners with the goal of enhancing the Kaggle score, the outcomes did not surpass the score of the final submission. Despite the lack of improvement in the final score, some of these attempts are documented below to highlight the diverse strategies explored throughout this project. Techniques that were explored and are briefly discussed:
+These endeavors encompassed the exploration of different models, optimizers, loss functions, preprocessing techniques, and the generation of final test predictions. Although these methods were employed in diverse manners with the goal of enhancing the Kaggle score, the outcomes did not surpass the score of the final submission. Despite the lack of improvement in the final score, some of these attempts are documented to highlight the diverse strategies explored throughout this project. Techniques that were explored and are briefly discussed:
 
 - Segmentation of the images
 - Training a 'simple' CNN for 170 epoch
